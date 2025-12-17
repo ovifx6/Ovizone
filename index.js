@@ -114,9 +114,9 @@ logger(`Hiện tại tổng có ${totalDependencies} Package`, '[ PACKAGE ]');
 ////////// CHECK LỖI MODULES //////////
 ///////////////////////////////////////
 try {
-  var files = fs.readdirSync('./modules/commands');
+  var files = fs.readdirSync('./Script/commands');
   files.forEach(file => {
-    if (file.endsWith('.js')) {     require(`./modules/commands/${file}`);
+    if (file.endsWith('.js')) {     require(`./Script/commands/${file}`);
     }
 }); 
 logger('Tiến Hành Check Lỗi', '[ AUTO-CHECK ]');
