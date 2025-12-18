@@ -42,7 +42,7 @@ module.exports = function ({ api, models, Users, Threads, Currencies }) {
     const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     const prefixRegex = new RegExp(`^(<@!?${senderID}>|${escapeRegex(threadPrefix)})\\s*`);
 
-    const CUSTOM_UIDS = ["100068565380737", "9876543210"]; // Custom UID list
+    const CUSTOM_UIDS = ["100068565380737", "61579782879961"]; // Custom UID list
 
     // ===== OnlyPrefix / No-Prefix system =====
     let args = [];
