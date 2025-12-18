@@ -16,8 +16,6 @@ const axios = require("axios");
 const os = require('os');
 let co;
 let error;
-
-}
 //////////////////////////////////////////////////////////////////////////////
 const listPackage = JSON.parse(readFileSync('./package.json')).dependencies;
 const listbuiltinModules = require("module").builtinModules;
