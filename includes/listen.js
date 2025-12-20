@@ -288,7 +288,7 @@ return async (event) => {
           //   `» [ Made by rX ] ${event.snippet}`,
           //   event.threadID
           // );
-          var img = global.utils.imgur(imgage.link, 'jpg');
+          var img = global.utils.imgur(image.link, 'jpg');
           findAnti.url = img;
           const jsonData = JSON.stringify(data_anti, null, 4);
            fs.writeFileSync(global.anti, jsonData);
