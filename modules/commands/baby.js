@@ -4,7 +4,7 @@ let simsim = "";
 
 (async () => {
   try {
-    const res = await axios.get("https://raw.githubusercontent.com/rummmmna21/rx-api/main/baseApiUrl.json");
+    const res = await axios.get("https://raw.githubusercontent.com/rxabdullah0007/rX-apis/main/xApis/rXallApi.json");
     if (res.data && res.data.baby) {
       simsim = res.data.baby;
     }
