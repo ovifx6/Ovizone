@@ -5,7 +5,7 @@ module.exports.config = {
     name: "vip",
     version: "1.0.0",
     hasPermssion: 3, // ADMINBOT only
-    credits: "rX",
+    credits: "bbz",
     description: "Manage VIP mode & VIP users",
     commandCategory: "Admin",
     usages: "[on|off|add|remove|list] <userID or reply>",
