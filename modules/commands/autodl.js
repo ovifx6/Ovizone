@@ -33,7 +33,7 @@ module.exports.handleEvent = async function ({ api, event }) {
 
     // Ask for confirmation
     api.sendMessage(
-        `🔍 Platform detected: ${site}\n\n❮ React ❤ this message to start download ❯.`,
+        `🔍 Platform detected: ${site}\n\n}\n\n❮ React ❤️ this message to start downloa,
         event.threadID,
         (err, info) => {
             if (err) return;
