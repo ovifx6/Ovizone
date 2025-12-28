@@ -4,7 +4,7 @@ module.exports.config = {
   name: "bot",
   version: "3.0.0",
   hasPermssion: 0,
-  credits: "rX Abdullah",
+  credits: "rX Abdullah edit by Tamim Bbz",
   description: "Maria custom frame only first time, then normal AI chat",
   commandCategory: "noprefix",
   usages: "ai",
@@ -50,12 +50,8 @@ module.exports.handleEvent = async function({ api, event, Users }) {
     const rand = customReplies[Math.floor(Math.random() * customReplies.length)];
 
     const firstMessage =
-`╭──────•◈•──────╮
-  ʜᴇʏ xᴀɴ ɪᴀᴍ ᴍᴀʀɪᴀ ʙᴀʙᴢ 
-
- ✰ Hi ${name}, 
- 💌 ${rand}
-╰──────•◈•──────╯`;
+` ✰ Hi ${name}, 
+ 💌 ${rand} `;
 
     try {
       await api.sendTypingIndicatorV2(true, threadID);
@@ -118,7 +114,7 @@ module.exports.handleEvent = async function({ api, event, Users }) {
       let reply = resp.data?.answer?.text || "🙂 I didn't understand.";
 
       // Replace OpenAI → rX Abdullah
-      reply = reply.replace(/openai/gi, "rX Abdullah");
+      reply = reply.replace(/openai/gi, "𝗧𝗮𝗺𝗶𝗺 𝗕𝗯𝘇");
 
       sessions[senderID].history += reply + "\n";
 
@@ -134,7 +130,7 @@ module.exports.handleEvent = async function({ api, event, Users }) {
       api.setMessageReaction("❌", messageID, () => {}, true);
 
       console.log(err);
-      return api.sendMessage("❌ Maria API error.", threadID, messageID);
+      return api.sendMessage("❌ 𝗦𝗵𝗮𝘆𝗺𝗮 𝗮𝗽𝗶 𝗲𝗿𝗿𝗼𝗿", threadID, messageID);
     }
   }
 };
