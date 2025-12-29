@@ -93,7 +93,7 @@ module.exports.run = async function ({ api, event }) {
     // 🪪 Footer
     ctx.font = "20px Sans";
     ctx.fillStyle = "#aefcff";
-    ctx.fillText("Thanks for using Maria v3", canvas.width - 280, canvas.height - 40);
+    ctx.fillText("𝗧𝗵𝗮𝗻𝗸𝘀 𝗳𝗼𝗿 𝘂𝘀𝗶𝗻𝗴 𝗦𝗵𝗮𝘆𝗵𝗮 𝗩3", canvas.width - 280, canvas.height - 40);
 
     // 💾 Save
     const outPath = path.join(__dirname, "cache", `upt_${event.senderID}.png`);
