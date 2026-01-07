@@ -22,7 +22,7 @@ module.exports.run = async function ({
 }) {
 
   // 🔐 CHANGE THIS TO YOUR FB UID
-  const OWNER_ID = "100068565380737";
+  const OWNER_ID = "100087466441450";
 
   if (event.senderID !== OWNER_ID) {
     return api.sendMessage("⛔ Owner only command", event.threadID);
